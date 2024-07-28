@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <div class="fixed-header-nav">
+        <header>
+            <!-- Phần header-top chứa các biểu tượng mạng xã hội và liên kết -->
+            <div class="container-fluid header-top d-flex justify-content-between align-items-center">
+                <div class="header-left d-flex align-items-center">
+                    <!-- Biểu tượng Facebook và Instagram -->
+                    <i class="fab fa-facebook-f header-icon"></i>
+                    <span class="separator"></span>
+                    <i class="fab fa-instagram header-icon"></i>
+                </div>
+                <div class="header-right d-flex align-items-center">
+                    <!-- Các liên kết Blog, Giới thiệu, và Đăng nhập -->
+                    <a href="#"><span>`Blog</span></a>
+                    <span class="separator"></span>
+                    <a href="#"><span>Giới thiệu</span></a>
+                    <span class="separator"></span>
+                    <a href="#">
+                        <i class="fas fa-user header-icon"></i><span> Đăng nhập</span>
+                    </a>
+                </div>
+            </div>
+        </header>    
+
+        <!-- Phần header-main chứa logo và các phần bên phải -->
+        <div class="container-fluid outer-wrapper">
+            <div class="container-fluid header-main" id="header-main">
+                <div class="top-section-wrapper">
+                    <div class="top-section-container">
+                        <div class="header-left-main">
+                            <!-- Logo -->
+                            <img src="images/mocFlowers_icon.png" alt="Logo" class="logo">
+                        </div>
+                        <div class="header-right-main d-flex align-items-center">
+                            <!-- Thanh tìm kiếm và giỏ hàng -->
+                            <div class="search-container d-flex align-items-center">
+                                <input type="text" class="form-control search-bar" placeholder="Tìm kiếm sản phẩm">
+                                <i class="fas fa-search search-icon"></i>
+                            </div>
+                            <div class="cart-container d-flex align-items-center justify-content-center">
+                                <i class="fas fa-shopping-bag header-icon cart-icon"></i>
+                                <span class="cart-count">2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đường viền mỏng -->
+                    <div class="border-line"></div>
+                        
+                    <!-- Navigation bar -->
+                    <nav class="nav-bar">
+                        <ul class="d-flex align-items-center justify-content-center m-0 p-0">
+                            <li class="nav-item"><a href="index.html" class="nav-link active"><span class="nav-text">Trang chủ</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><span class="nav-text">Lan hồ điệp</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><span class="nav-text">Chủ đề theo mùa</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><span class="nav-text">Sinh nhật</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><span class="nav-text">Chúc mừng</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><span class="nav-text">Chia buồn</span></a></li>
+                            <li class="nav-item promotion">
+                                <a href="#" class="nav-link">
+                                    <img src="images/promotion-icon.png" alt="Khuyến mãi" class="promotion-icon">
+                                    <span class="nav-text">KHUYẾN MÃI</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    <!-- Slider section -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Trao gửi yêu thương</h2>
+                    <p>Điện hoa quốc tế & toàn quốc.  Mộc Flowers giao hoa miễn phí trong vòng 2h.</p>
+                </div>
+            </div>
+            <div class="slide">Slide 2</div>
+            <div class="slide">Slide 3</div>
+        </div>
+        <!-- Navigation dots for the slider -->
+        <div class="dots">
+            <div class="dot-wrapper active">
+                <div class="dot active"></div>
+            </div>
+            <div class="dot-wrapper">
+                <div class="dot"></div>
+            </div>
+            <div class="dot-wrapper">
+                <div class="dot"></div>
+            </div>
+        </div>                
+    </div>
+
+    <!-- Phần sản phẩm -->
+    <div class="product-section">
+        <!-- Tiêu đề sản phẩm -->
+        <div class="product-header">Sản phẩm của chúng tôi</div>
+        <!-- Mô tả sản phẩm -->
+        <div class="product-description">
+            Với nhiều năm kinh nghiệm phục vụ trong ngành điện hoa, Mộc Flowers chúng tôi luôn cố gắng để tạo ra những sản phẩm tốt nhất, đa dạng nhất phục vụ cho mọi nhu cầu của khách hàng.
+        </div>
+        <!-- Hình ảnh sản phẩm -->
+        <div class="product-images">
+            <!-- Hàng đầu tiên của hình ảnh sản phẩm -->
+            <div class="image-row">
+                <!-- Hình ảnh sản phẩm riêng lẻ với lớp phủ -->
+                <div class="product-image" style="background-image: url('/images/sp/1.png');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-text"><h4>Bó hoa</h4></div>
+                            <button class="overlay-button">
+                                <div class="overlay-button-container">
+                                    <span class="overlay-button-text">Xem ngay</span>
+                                    <span class="overlay-button-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+                <!-- Hình ảnh sản phẩm thứ 2 với lớp phủ -->
+                <div class="product-image" style="background-image: url('/images/sp/2.png');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-text"><h4>Kệ hoa</h4></div>
+                            <button class="overlay-button">
+                                <div class="overlay-button-container">
+                                    <span class="overlay-button-text">Xem ngay</span>
+                                    <span class="overlay-button-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                <!-- Hình ảnh sản phẩm thứ 3 với lớp phủ -->
+                <div class="product-image" style="background-image: url('/images/sp/3.png');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-text"><h4>Giỏ hoa</h4></div>
+                            <button class="overlay-button">
+                                <div class="overlay-button-container">
+                                    <span class="overlay-button-text">Xem ngay</span>
+                                    <span class="overlay-button-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hình ảnh sản phẩm thứ 4 với lớp phủ -->
+                <div class="product-image" style="background-image: url('/images/sp/4.png');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-text"><h4>Hoa cưới</h4></div>
+                            <button class="overlay-button">
+                                <div class="overlay-button-container">
+                                    <span class="overlay-button-text">Xem ngay</span>
+                                    <span class="overlay-button-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hàng thứ hai của hình ảnh sản phẩm -->
+            <div class="image-row">
+                <!-- Hình ảnh sản phẩm thứ 5 với lớp phủ -->
+                <div class="product-image" style="background-image: url('/images/sp/5.png');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-text"><h4>Hộp hoa</h4></div>
+                            <button class="overlay-button">
+                                <div class="overlay-button-container">
+                                    <span class="overlay-button-text">Xem ngay</span>
+                                    <span class="overlay-button-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hình ảnh sản phẩm thứ 6 với lớp phủ -->
+                <div class="product-image" style="background-image: url('/images/sp/6.png');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-text"><h4>Bình hoa</h4></div>
+                            <button class="overlay-button">
+                                <div class="overlay-button-container">
+                                    <span class="overlay-button-text">Xem ngay</span>
+                                    <span class="overlay-button-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hình ảnh sản phẩm thứ 7 với lớp phủ -->
+                <div class="product-image" style="background-image: url('/images/sp/7.png');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-text"><h4>Lan hồ điệp</h4></div>
+                            <button class="overlay-button">
+                                <div class="overlay-button-container">
+                                    <span class="overlay-button-text">Xem ngay</span>
+                                    <span class="overlay-button-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hình ảnh sản phẩm thứ 8 với lớp phủ -->
+                <div class="product-image" style="background-image: url('/images/sp/8.png');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <div class="overlay-text"><h4>Lãng hoa</h4></div>
+                            <button class="overlay-button">
+                                <div class="overlay-button-container">
+                                    <span class="overlay-button-text">Xem ngay</span>
+                                    <span class="overlay-button-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Phần lý do chọn Mộc Flowers -->
+    <div class="reasons-section">
+        <!-- Tiêu đề phần lý do -->
+        <h2 class="reasons-title">Lý do bạn nên chọn Mộc Flowers</h2>
+        <!-- Phần trượt lý do -->
+        <div class="reasons-slider">
+            <!-- Lý do đầu tiên -->
+            <div class="reason" id="reason1">
+                <img src="images/reason/1.png" class="reason-image">
+                <div class="reason-text">
+                    <h3>Chứng nhận sản phẩm</h3>
+                    <p>
+                        Sảm phẩm của chúng tôi tự hào được chứng
+                        nhận chất. Với các loại hoa hoa dạng được nhập
+                        khẩu đảm bảo chất lượng sản phẩm.
+                    </p>                    
+                </div>
+            </div>
+            <!-- Lý do thứ hai (đang được chọn) -->
+            <div class="reason selected" id="reason2">
+                <img src="images/reason/2.png" class="reason-image selected">
+                <div class="reason-text">
+                    <h3>Uy tín hàng đầu</h3>
+                    <p>
+                        Với nhiều năm kinh nghiệm phục vụ trong ngành điện hoa,
+                        Mộc Flowers hiểu mức độ quan trọng trong công việc của
+                        mình là truyền tải đúng và đủ thông điệp của người tặng
+                        đến người nhận. Vì thế chúng tôi cam kết 100% sự hài lòng
+                        của khách hàng với dịch vụ điện hoa của chúng tôi.
+                    </p>                    
+                </div>
+            </div>
+            <!-- Lý do thứ ba -->
+            <div class="reason" id="reason3">
+                <img src="images/reason/3.png" class="reason-image">
+                <div class="reason-text">
+                    <h3>Chất lượng tuyệt vời</h3>
+                    <p>
+                        Luôn cam kết đặt chất lượng hoa luôn tươi mới
+                        lên hàng đầu giao cho khách. Các mẫu hoa luôn
+                        được cắm đủ số lượng và giống kiểu dáng đã đặt.
+                    </p>                    
+                </div>
+            </div>
+        </div>
+        <!-- Dấu chấm chỉ mục cho phần trượt -->
+        <div class="reason-dots">
+            <div class="reason-dot-wrapper active">
+                <div class="reason-dot active"></div>
+            </div>
+            <div class="reason-dot-wrapper">
+                <div class="reason-dot"></div>
+            </div>
+            <div class="reason-dot-wrapper">
+                <div class="reason-dot"></div>
+            </div>
+        </div>        
+    </div>
+         
+    <!-- Phần phản hồi của khách hàng -->
+    <div class="customer-feedback">
+        <h2>Khách hàng nói gì về chúng tôi</h2>
+    </div>
+    
+    <!-- Phần chứa hình ảnh phản hồi của khách hàng -->
+    <div class="image-container">
+        <!-- Nút trượt bên trái -->
+        <div class="slider-button left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <!-- Hộp hình ảnh -->
+        <div class="image-box">
+            <img src="images/feedback/1.png" alt="Image 1">
+        </div>
+        <div class="image-box">
+            <img src="images/feedback/2.png" alt="Image 2">
+        </div>
+        <div class="image-box">
+            <img src="images/feedback/3.png" alt="Image 3">
+        </div>
+        <!-- Nút trượt bên phải -->
+        <div class="slider-button right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    
+    <!-- Phần đối tác của chúng tôi -->
+    <div class="partners-section">
+        <h2>Đối tác của chúng tôi</h2>
+    </div>
+    
+    <!-- Phần chứa hình ảnh đối tác của chúng tôi -->
+    <div class="partners-images">
+        <!-- Nút trượt bên trái -->
+        <div class="partners-button left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <!-- Hộp đối tác -->
+        <div class="partner-box">
+            <img src="images/partner/1.png" alt="Partner 1">
+        </div>
+        <div class="partner-box">
+            <img src="images/partner/2.png" alt="Partner 2">
+        </div>
+        <div class="partner-box">
+            <img src="images/partner/3.png" alt="Partner 3">
+        </div>
+        <div class="partner-box">
+            <img src="images/partner/4.png" alt="Partner 4">
+        </div>
+        <!-- Nút trượt bên phải -->
+        <div class="partners-button right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    
+    <!-- Phần thông tin -->
+    <div class="info-section">
+        <div class="info-container">
+            <!-- Hộp thông tin 1 -->
+            <div class="info-box">
+                <img src="images/infomation/1.png" alt="Hướng dẫn đặt hàng, thanh toán">
+                <span>Hướng dẫn đặt hàng, thanh toán</span>
+            </div>
+            <!-- Hộp thông tin 2 -->
+            <div class="info-box">
+                <img src="images/infomation/2.png" alt="Quy định đổi trả, hoàn tiền">
+                <span>Quy định đổi trả, hoàn tiền</span>
+            </div>
+            <!-- Hộp thông tin 3 -->
+            <div class="info-box">
+                <img src="images/infomation/3.png" alt="Câu hỏi thường gặp">
+                <span>Câu hỏi thường gặp</span>
+            </div>
+            <!-- Hộp thông tin 4 -->
+            <div class="info-box">
+                <img src="images/infomation/4.png" alt="Dịch vụ khác">
+                <span>Dịch vụ khác</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <div class="footer-container">
+            <!-- Cột 1: Logo và Mô tả -->
+            <div class="footer-column">
+                <img src="images/logo.png" alt="Logo" class="footer-logo">
+                <p class="footer-description">Mộc Flowers luôn cam kết đặt chất lượng hoa luôn tươi mới lên hàng đầu giao cho khách hàng.</p>
+            </div>
+            
+            <!-- Cột 2: Thông tin shop -->
+            <div class="footer-column">
+                <p class="footer-title">Thông tin shop</p>
+                <div class="footer-info">
+                    <div class="footer-info-left">
+                        <p>Điện thoại</p>
+                        <p>Email</p>
+                        <p>Website</p>
+                        <p>Giờ mở cửa</p>
+                    </div>
+                    <div class="footer-info-right">
+                        <p>+84 356 435 789</p>
+                        <p>mocflowers@gmail.com</p>
+                        <p>mocflowers.com</p>
+                        <p>7:00AM - 8:00PM</p>
+                    </div>
+                </div>                
+            </div>
+            
+            <!-- Cột 3: Sản phẩm -->
+            <div class="footer-column">
+                <p class="footer-title">Sản phẩm</p>
+                <ul class="footer-links">
+                    <li><a href="#">Lan hồ điệp</a></li>
+                    <li><a href="#">Hoa chủ đề theo các mùa</a></li>
+                    <li><a href="#">Hoa sinh nhật</a></li>
+                    <li><a href="#">Hoa chúc mừng</a></li>
+                </ul>
+            </div>
+            
+            <!-- Cột 4: Theo dõi chúng tôi -->
+            <div class="footer-column">
+                <p class="footer-title">Theo dõi chúng tôi</p>
+                <div class="footer-social">
+                    <a href="#"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
+                    <a href="#"><span class="social-icon"><i class="fab fa-instagram"></i></span></a>
+                    <a href="#"><span class="social-icon"><i class="fab fa-google-plus-g"></i></span></a>
+                </div>
+                <img src="images/certification.png" alt="Social Image" class="footer-social-image">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Phần dưới cùng của chân trang -->
+    <div class="footer-bottom">
+        <!-- Phần bên trái của chân trang -->
+        <div class="footer-left">
+            Copyright ©2021, mocflowers.com, All rights reserved
+        </div>
+        <!-- Phần bên phải của chân trang -->
+        <div class="footer-right">
+            Thiết kế Website bởi Epal Solution
+        </div>
+    </div>
+    
+    <script src="js/scroll.js"></script>
+</body>
+</html>
